@@ -1,5 +1,5 @@
 {
-  "name": "memredis",
+  "name": "@capaj/memredis",
   "version": "0.1.0",
   "description": "",
   "main": "./dist/memRedis.js",
