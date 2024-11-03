@@ -21,7 +21,7 @@ pnpm install memredis
 First, create your memRedis instance with your Redis client:
 
 ```typescript
-import { createMemRedis } from 'memredis'
+import { createMemRedis } from '@capaj/memredis'
 import { Redis } from 'ioredis' // or any other Redis client
 
 const redis = new Redis()

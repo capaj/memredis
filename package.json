@@ -1,6 +1,6 @@
 {
   "name": "@capaj/memredis",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "./dist/memRedis.js",
   "scripts": {
@@ -19,6 +19,9 @@
     "vitest": "^2.1.4",
     "@types/debug": "^4.1.12",
     "@types/object-hash": "^3.0.6"
+  },
+  "peerDependencies": {
+    "ioredis": "^5.4.1"
   },
   "module": "./dist/memRedis.mjs",
   "types": "./dist/memRedis.d.ts",
