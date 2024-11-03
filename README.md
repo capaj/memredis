@@ -38,8 +38,10 @@ const memoizedGetUser = memRedis(
   }
 )
 
-// Use the memoized function
+// Use the memoized function- this will cache the result in Redis
 const userData = await memoizedGetUser.memoized('user123')
+
+const userDataFromRedis = await memoizedGetUser.memoized('user123') // this will return the cached result
 
 // Clear specific cache entry
 await memoizedGetUser.clearKey('user123')

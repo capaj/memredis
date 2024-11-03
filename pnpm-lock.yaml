@@ -8,12 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@types/debug':
-        specifier: ^4.1.12
-        version: 4.1.12
-      '@types/object-hash':
-        specifier: ^3.0.6
-        version: 3.0.6
       debug:
         specifier: ^4.3.7
         version: 4.3.7
@@ -21,6 +15,12 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
     devDependencies:
+      '@types/debug':
+        specifier: ^4.1.12
+        version: 4.1.12
+      '@types/object-hash':
+        specifier: ^3.0.6
+        version: 3.0.6
       ioredis:
         specifier: ^5.4.1
         version: 5.4.1
