@@ -1,0 +1,39 @@
+{
+  "name": "memredis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/memRedis.js",
+  "scripts": {
+    "test": "vitest",
+    "ts": "tsc --noEmit",
+    "build": "tsup src/memRedis.ts --format cjs,esm --dts --sourcemap",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "ioredis": "^5.4.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  },
+  "module": "./dist/memRedis.mjs",
+  "types": "./dist/memRedis.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/memRedis.js",
+      "import": "./dist/memRedis.mjs",
+      "types": "./dist/memRedis.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@types/debug": "^4.1.12",
+    "@types/object-hash": "^3.0.6",
+    "debug": "^4.3.7",
+    "object-hash": "^3.0.0"
+  }
+}
