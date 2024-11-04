@@ -1,4 +1,4 @@
-# memredis 
+# @capaj/memredis 
 
 🚀 Redis-backed memoization for your async functions
 
@@ -14,7 +14,7 @@
 ## Installation
 
 ```bash
-pnpm install memredis
+pnpm install @capaj/memredis
 ```
 
 # Usage
