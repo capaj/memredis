@@ -61,7 +61,7 @@ export const createMemRedis = (redisClient: any) => {
         if (keys.length === 0) {
           return 0
         }
-        return redisClient.del(keys)
+        return redisClient.del(...keys)
       },
       clearKey: async (...args: any[]) => {
         const key = [prefix, cacheKey ? cacheKey(args) : objectHash(args)].join(

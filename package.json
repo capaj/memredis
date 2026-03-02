@@ -1,10 +1,10 @@
 {
   "name": "@capaj/memredis",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "",
   "main": "./dist/memRedis.js",
   "scripts": {
-    "test": "vitest",
+    "test": "vitest run && bun test src/memRedis.bun",
     "ts": "tsc --noEmit",
     "build": "tsup src/memRedis.ts --format cjs,esm --dts --sourcemap",
     "prepublishOnly": "npm run build"
@@ -13,12 +13,13 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "ioredis": "^5.4.1",
-    "tsup": "^8.3.5",
-    "typescript": "^5.6.3",
-    "vitest": "^2.1.4",
+    "@types/bun": "^1.3.9",
     "@types/debug": "^4.1.12",
-    "@types/object-hash": "^3.0.6"
+    "@types/object-hash": "^3.0.6",
+    "ioredis": "^5.10.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
   },
   "peerDependencies": {
     "ioredis": "^5.4.1"
@@ -36,7 +37,7 @@
     "dist"
   ],
   "dependencies": {
-    "debug": "^4.3.7",
+    "debug": "^4.4.3",
     "object-hash": "^3.0.0"
   }
 }
